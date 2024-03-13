@@ -1,0 +1,82 @@
+﻿<Window x:Class="AppFermer.Window.WindowDeleteProduct"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppFermer.Window"
+        mc:Ignorable="d"
+        WindowStyle="ToolWindow"
+        Title="Удаление продукта" Height="170" Width="350">
+    <Grid>
+        <StackPanel VerticalAlignment="Top">
+            <TextBlock 
+                Margin="10" 
+                Text="Удаление продукта"
+                Style="{StaticResource Zagolovok}"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Orientation="Vertical">
+            
+            <StackPanel 
+                Margin="5"
+                Orientation="Horizontal">
+                <TextBlock Text="Продукт: "/>
+                <TextBlock Name="TxtNameProduct"
+                       FontWeight="Bold"
+                       Text="Тут будет название"/>
+            </StackPanel>
+
+            <StackPanel 
+                Margin="5"
+                Orientation="Horizontal">
+                <TextBlock Text="В количестве: "/>
+                <TextBox Style="{StaticResource DefaultStyleTxb}"
+                         Width="100"
+                         Name="TxbTotalProduct"/>
+                <TextBlock Name="TxtCount"
+                           Text="(1)"
+                           Margin="5,0,0,0"
+                           FontWeight="Bold"
+                           Foreground="Red">
+                    <TextBlock.ToolTip>
+                        <ToolTip Content="Количество продукции на складе"/>
+                    </TextBlock.ToolTip>
+                </TextBlock>
+                <Button
+                    Name="BtnDelete"
+                    Click="BtnDelete_Click"
+                    Style="{StaticResource ClearBtn}"
+                    >
+                    <Image 
+                        Height="20"
+                        Width="20"
+                        Source="/Resources/File/delete.png"/>
+                    <Button.ToolTip>
+                        <ToolTip Content="Удалить продукт из БД"/>
+                    </Button.ToolTip>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+        
+        <StackPanel VerticalAlignment="Bottom"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+            <Button 
+                Name="BtnAccept"
+                Click="BtnAccept_Click"
+                Background="LightGreen"
+                BorderBrush="Green"
+                Foreground="Black"
+                Margin="10"
+                Style="{StaticResource VeryCoolStyleBtn}"
+                Content="Подтвердить"/>
+            <Button 
+                Name="BtnCancel"
+                Click="BtnCancel_Click"
+                Margin="10"
+                Style="{StaticResource VeryCoolStyleBtn}"
+                Content="Отмена"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,70 @@
+﻿<Window x:Class="AppFermer.Window.WindowInfoNessary"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppFermer.Window"
+        mc:Ignorable="d"
+        Title="Сведения о потребностях фермеров" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <!--Панель с кнопками-->
+            <DockPanel>
+                <Menu DockPanel.Dock="Top">
+                    <MenuItem Header="Работа с заявками">
+                        <MenuItem 
+                            Style="{StaticResource StyleMenu}"
+                            Header="Создать заявку"
+                            Name="MICreateNessery"
+                            Click="MICreateNessery_Click"/>
+                        <MenuItem 
+                            Style="{StaticResource StyleMenu}"
+                            Header="Удалить заявку">
+                            <MenuItem.Icon>
+                                <Image Source="/Resources/File/delete.png"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem 
+                            Style="{StaticResource StyleMenu}"
+                            Header="Отредактировать заявку"/>
+                        <Separator/>
+                        <MenuItem Header="Закрыть"/>
+                    </MenuItem>
+                    <MenuItem Header="О программе"/>
+                    <MenuItem Header="О программе">
+                        <MenuItem Header="Я пункт"/>
+                        <MenuItem Header="Я пункт"/>
+                        <MenuItem Header="Я пункт"/>
+                    </MenuItem>
+                </Menu>
+
+            </DockPanel>
+
+            <!--Таблица с данными-->
+                <DataGrid Height="350"
+                          AutoGenerateColumns="False"
+                          Name="GridListNessary"
+                          CanUserAddRows="False">
+                    <DataGrid.Columns>
+                    <DataGridTextColumn Header="Фермер"
+                                        Width="*"
+                                        Binding="{Binding Fermer.Info}"/>
+                        
+                    <DataGridTextColumn Header="Наименование заявки"
+                                        Width="*"
+                                        Binding="{Binding Potrebnost.Nazvanie}"/>
+                    <DataGridTextColumn Header="Описание"
+                                        Width="*"
+                                        Binding="{Binding Opisanie}"/>
+                    <DataGridTextColumn Header="Статус"
+                                        Width="*"
+                                        Binding="{Binding Status.Nazvanie}"/>
+                    <DataGridTextColumn Header="Дата"
+                                        Width="*"
+                                        Binding="{Binding DataZayavki, StringFormat='dd.MM.yyyy'}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+
+            </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,125 @@
+C:\Users\burnf\source\repos\AppFermer\AppFermer\obj\Debug\MainWindow.g.cs
+C:\Users\burnf\source\repos\AppFermer\AppFermer\obj\Debug\App.g.cs
+C:\Users\burnf\source\repos\AppFermer\AppFermer\obj\Debug\AppFermer_MarkupCompile.cache
+C:\Users\burnf\source\repos\AppFermer\AppFermer\obj\Debug\AppFermer_MarkupCompile.lref
+C:\Users\burnf\source\repos\AppFermer\AppFermer\obj\Debug\AppFermer_Content.g.cs
+C:\Users\burnf\source\repos\AppFermer\AppFermer\bin\Debug\AppFermer.exe.config
+C:\Users\burnf\source\repos\AppFermer\AppFermer\bin\Debug\AppFermer.exe
+C:\Users\burnf\source\repos\AppFermer\AppFermer\bin\Debug\AppFermer.pdb
+C:\Users\burnf\source\repos\AppFermer\AppFermer\bin\Debug\EntityFramework.dll
+C:\Users\burnf\source\repos\AppFermer\AppFermer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\burnf\source\repos\AppFermer\AppFermer\bin\Debug\EntityFramework.xml
+C:\Users\burnf\source\repos\AppFermer\AppFermer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\burnf\source\repos\AppFermer\AppFermer\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\burnf\source\repos\AppFermer\AppFermer\obj\Debug\App.baml
+C:\Users\burnf\source\repos\AppFermer\AppFermer\obj\Debug\MainWindow.baml
+C:\Users\burnf\source\repos\AppFermer\AppFermer\obj\Debug\AppFermer.g.resources
+C:\Users\burnf\source\repos\AppFermer\AppFermer\obj\Debug\AppFermer.Properties.Resources.resources
+C:\Users\burnf\source\repos\AppFermer\AppFermer\obj\Debug\AppFermer.csproj.GenerateResource.cache
+C:\Users\burnf\source\repos\AppFermer\AppFermer\obj\Debug\AppFermer.csproj.CoreCompileInputs.cache
+C:\Users\burnf\source\repos\AppFermer\AppFermer\obj\Debug\AppFermer.csproj.CopyComplete
+C:\Users\burnf\source\repos\AppFermer\AppFermer\obj\Debug\AppFermer.exe
+C:\Users\burnf\source\repos\AppFermer\AppFermer\obj\Debug\AppFermer.pdb
+C:\Users\burnf\source\repos\AppFermer\AppFermer\obj\Debug\Page\PageMenuProgram.g.cs
+C:\Users\burnf\source\repos\AppFermer\AppFermer\obj\Debug\Page\PageMenuProgram.baml
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\bin\Debug\AppFermer.exe.config
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\bin\Debug\AppFermer.exe
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\bin\Debug\AppFermer.pdb
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\bin\Debug\EntityFramework.dll
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\bin\Debug\EntityFramework.xml
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\obj\Debug\MainWindow.g.cs
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\obj\Debug\Page\PageMenuProgram.g.cs
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\obj\Debug\App.g.cs
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\obj\Debug\AppFermer_Content.g.cs
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\obj\Debug\AppFermer_MarkupCompile.cache
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\obj\Debug\AppFermer_MarkupCompile.lref
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\obj\Debug\App.baml
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\obj\Debug\MainWindow.baml
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\obj\Debug\Page\PageMenuProgram.baml
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\obj\Debug\AppFermer.g.resources
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\obj\Debug\AppFermer.Properties.Resources.resources
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\obj\Debug\AppFermer.csproj.GenerateResource.cache
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\obj\Debug\AppFermer.csproj.CoreCompileInputs.cache
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\obj\Debug\AppFermer.csproj.CopyComplete
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\obj\Debug\AppFermer.exe
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\obj\Debug\AppFermer.pdb
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\obj\Debug\AppFermer.csprojAssemblyReference.cache
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\obj\Debug\Window\WindowFermerInfo.g.cs
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\obj\Debug\Window\WindowFermerInfo.baml
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\obj\Debug\Window\WindowAddProductFermer.g.cs
+C:\Users\burnf\source\repos\AppFermer_default\AppFermer\AppFermer\obj\Debug\Window\WindowAddProductFermer.baml
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\bin\Debug\AppFermer.exe.config
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\bin\Debug\AppFermer.exe
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\bin\Debug\AppFermer.pdb
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\bin\Debug\EntityFramework.dll
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\bin\Debug\EntityFramework.xml
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\MainWindow.g.cs
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\Page\PageMenuProgram.g.cs
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\Window\WindowAddProductFermer.g.cs
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\Window\WindowFermerInfo.g.cs
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\App.g.cs
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\AppFermer_Content.g.cs
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\AppFermer_MarkupCompile.cache
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\AppFermer_MarkupCompile.lref
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\App.baml
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\MainWindow.baml
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\Page\PageMenuProgram.baml
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\Window\WindowAddProductFermer.baml
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\Window\WindowFermerInfo.baml
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\AppFermer.g.resources
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\AppFermer.Properties.Resources.resources
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\AppFermer.csproj.GenerateResource.cache
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\AppFermer.csproj.CoreCompileInputs.cache
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\AppFermer.csproj.CopyComplete
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\AppFermer.exe
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\AppFermer.pdb
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\Window\WindowDeleteProduct.g.cs
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\Window\WindowDeleteProduct.baml
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\AppFermer.csprojAssemblyReference.cache
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\Window\WindowTotalProduct.g.cs
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer\AppFermer\obj\Debug\Window\WindowTotalProduct.baml
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\AppFermer.csprojAssemblyReference.cache
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\MainWindow.g.cs
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\Page\PageMenuProgram.g.cs
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\Window\WindowAddProductFermer.g.cs
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\Window\WindowDeleteProduct.g.cs
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\Window\WindowFermerInfo.g.cs
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\Window\WindowInfoNessary.g.cs
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\Window\WindowTotalProduct.g.cs
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\App.g.cs
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\AppFermer_Content.g.cs
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\AppFermer_MarkupCompile.cache
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\AppFermer_MarkupCompile.lref
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\AppFermer.exe
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\AppFermer.pdb
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\bin\Debug\AppFermer.exe.config
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\bin\Debug\AppFermer.exe
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\bin\Debug\AppFermer.pdb
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\bin\Debug\EntityFramework.dll
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\bin\Debug\EntityFramework.xml
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\App.baml
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\MainWindow.baml
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\Page\PageMenuProgram.baml
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\Window\WindowAddProductFermer.baml
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\Window\WindowDeleteProduct.baml
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\Window\WindowFermerInfo.baml
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\Window\WindowTotalProduct.baml
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\Window\WindowInfoNessary.baml
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\AppFermer.g.resources
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\AppFermer.Properties.Resources.resources
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\AppFermer.csproj.GenerateResource.cache
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\AppFermer.csproj.CoreCompileInputs.cache
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\AppFermer.csproj.CopyComplete
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\Window\WindowNessary.g.cs
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\Window\WindowNessary.baml
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\Window\WindowMoney.g.cs
+C:\Users\burnf\Downloads\Копия AppFermer (1)\AppFermer2\AppFermer\AppFermer\obj\Debug\Window\WindowMoney.baml

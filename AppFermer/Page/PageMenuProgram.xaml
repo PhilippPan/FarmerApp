@@ -1,0 +1,149 @@
+﻿<Page x:Class="AppFermer.Page.PageMenuProgram"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AppFermer.Page"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="1045"
+      Title="PageMenuProgram">
+
+    <Grid>
+        <StackPanel>
+            <GroupBox Header="Отчёты: "
+                      Background="LightYellow"
+                      Margin="10"
+                      VerticalAlignment="Top"
+                      FontSize="13pt">
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Center">
+                    <Button Content="Сведения о фермерах" 
+                            Width="170"
+                            Style="{StaticResource VeryCoolStyleBtn}"
+                            Name="BtnFermerInfo"
+                            Click="BtnFermerInfo_Click"
+                             Margin="5"/>
+                    <Button 
+                        Name="BtnTotalProduct"
+                        Click="BtnTotalProduct_Click"
+                            Content="Сведения о производимой продукции" 
+                            Width="250" 
+                            Style="{StaticResource VeryCoolStyleBtn}"
+                            Margin="5"/>
+                    <Button Content="Сведения о потребностях" 
+                            Width="190"
+                            Name="BtnNessary"
+                            Click="BtnNessary_Click"
+                             Style="{StaticResource VeryCoolStyleBtn}"
+                            Margin="5"/>
+                    <Button Content="Приход продукции"
+                            Width="170"
+                             Style="{StaticResource VeryCoolStyleBtn}"
+                            Name="BtnAddProduction"
+                            Click="BtnAddProduction_Click"
+                            Margin="5"/>
+                    <Button Content="Прибыль"
+                            Name="BtnMoney"
+                            Click="BtnMoney_Click"
+                            Margin="5"
+                            Style="{StaticResource VeryCoolStyleBtn}"/>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox
+                Margin="10"
+                Height="200"
+                FontSize="13pt"
+                Header="Сведения:">
+                
+                <DataGrid
+                    IsReadOnly="True"
+                    CanUserAddRows="False"
+                    AutoGenerateColumns="False"
+                    Name="GridListProduct">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Название" 
+                                            Width="*"
+                                            Binding="{Binding Nazvanie}"/>
+                        <DataGridTextColumn Header="Вид продукции"
+                                            Binding="{Binding VidProdukcii.Nazvanie}"
+                                            Width="*"/>
+                        <DataGridTextColumn Header="Количество"
+                                            Width="*"
+                                            Binding="{Binding Kolichestvo}"/>
+                        <DataGridTextColumn Header="Ед. измерения"
+                                            Width="*"
+                                            Binding="{Binding EdinicaIzmerenia.Nazvanie}"
+                                            />
+                        <DataGridTextColumn Header="Качество"
+                                            Width="*"
+                                            Binding="{Binding Kachestvo.Nazvanie}"/>
+                        <DataGridTextColumn Header="Отпускная цена"
+                                            HeaderStyle="{StaticResource DefaultDataGridColumn}"
+                                            Width="*"
+                                            Binding="{Binding OtpysknayaCena}"/>
+                        <DataGridTemplateColumn>
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button
+                                        Background="Transparent"
+                                        BorderThickness="0"
+                                        Name="BtnDeleteProduct"
+                                        Click="BtnDeleteProduct_Click"
+                                        >
+                                        <Button.ToolTip>
+                                            <ToolTip Content="Удаление продукта"/>
+                                        </Button.ToolTip>
+                                        <Image 
+                                            Height="20"
+                                            Width="20"
+                                            Source="/Resources/File/delete.png"/>
+                                    </Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate> 
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+                
+            </GroupBox>
+            <StackPanel 
+                Margin="5"        
+                Orientation="Horizontal"
+                HorizontalAlignment="Right">
+                <TextBlock 
+                    TextAlignment="Right"
+                    VerticalAlignment="Center"
+                    Width="190"
+                    Text="Фильтр по виду продукции:"/>
+                <ComboBox 
+                    SelectionChanged="CmbFiltr_SelectionChanged"
+                    Style="{StaticResource DefaultStyleCmb}"
+                    Name="CmbFiltr"/>
+                <Button Width="25"
+                        Height="25"
+                        Content="C"
+                        Name="BtnClear"
+                        Click="BtnClear_Click"
+                        />
+                <TextBlock
+                    VerticalAlignment="Center"
+                    Margin="5"
+                    TextAlignment="Right"
+                        Text="Сумма итого: "
+                        />
+
+                <TextBlock 
+                    FontSize="13pt"
+                    Margin="5"
+                    FontWeight="Bold"
+                    Text="Вывод итого"
+                    Name="TxtCostBuyAll"/>
+                <TextBlock 
+                    Name="TxtRub"
+                    FontSize="13pt"
+                    Margin="5"
+                    FontWeight="Bold"
+                    Text="руб."/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,24 @@
+﻿<Window x:Class="AppFermer.Window.WindowMoney"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppFermer.Window"
+        mc:Ignorable="d"
+        Title="Прибыль по каждому фермеру" Height="150" Width="350">
+    <Grid>
+        <StackPanel>
+            <StackPanel>
+                <TextBlock Text="Выберите фермера"/>
+                <ComboBox Name="CmbFermer" 
+                          SelectionChanged="CmbFermer_SelectionChanged"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="Выберите продукцию"/>
+                <ComboBox Name="CmbProductFermer"/>
+            </StackPanel>
+            <TextBlock Text="Всего произведено по виду продукции:"/>
+            <TextBlock Name="TxtAllProduct"/>
+        </StackPanel>
+    </Grid>
+</Window>

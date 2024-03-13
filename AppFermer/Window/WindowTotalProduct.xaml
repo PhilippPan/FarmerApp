@@ -1,0 +1,84 @@
+﻿<Window x:Class="AppFermer.Window.WindowTotalProduct"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppFermer.Window"
+        mc:Ignorable="d"
+        Title="Сведения о производимой продукции" Height="580" Width="550">
+    <Grid>
+        <StackPanel Orientation="Vertical"
+                    VerticalAlignment="Center">
+            <GroupBox Height="250"
+                      Header="Информация о Продукции">
+                <DataGrid
+                    CanUserAddRows="False"
+                    AutoGenerateColumns="False"
+                    Name="GridProdukcia">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn 
+                            Header="Название"
+                            Width="*"
+                            Binding="{Binding Nazvanie}"/>
+                        <DataGridTextColumn 
+                            Width="*"
+                            Binding="{Binding Kachestvo.Nazvanie}"
+                            Header="Качество"/>
+                        <DataGridTextColumn 
+                            Width="*"
+                            Binding="{Binding VidProdukcii.Nazvanie}"
+                            Header="Вид продукции"/>
+                        <DataGridTextColumn 
+                            Width="*"
+                            Binding="{Binding EdinicaIzmerenia.Nazvanie}"
+                            Header="Ед.измерения" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </GroupBox>
+
+            
+            <GroupBox Height="250"
+                      Header="Информация о Поставке">
+
+                <DataGrid 
+                    CanUserAddRows="False"
+                    AutoGenerateColumns="False"
+                    Name="GridProizvodstvo">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn 
+                            Width="*"
+                            Binding="{Binding Fermer.Familia}"
+                            Header="Фермер" 
+                            />
+                        <DataGridTextColumn 
+                            Width="*"
+                            Binding="{Binding Produkcia.Nazvanie}"
+                            Header="Продукция" 
+                            />
+                        <DataGridTextColumn 
+                            Width="*"
+                            Binding="{Binding DataPoseshenia, StringFormat='dd.MM.yyyy'}"
+                            Header="Дата" 
+                            />
+                        <DataGridTextColumn 
+                            Width="*"
+                            Binding="{Binding Commentarii}"
+                            Header="Комментарий" 
+                            />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </GroupBox>
+            <StackPanel Orientation="Horizontal"
+                        Margin="5,0,0,0">
+                <TextBlock Text="Вид продукции: "
+                       VerticalAlignment="Center"/>
+                <ComboBox Name="CmbVidProdukcii"
+                          SelectionChanged="CmbVidProdukcii_SelectionChanged"
+                          Style="{StaticResource DefaultStyleCmb}"/>
+                <Button Content="C"
+                        Name="BtnClear"
+                        Click="BtnClear_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

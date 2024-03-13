@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище wsr_user_17Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="EdinicaIzmerenia">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nazvanie" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Fermer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Familia" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Imya" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Otchestvo" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Adres" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Kachestvo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nazvanie" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Potrebnost">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nazvanie" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Cena" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Produkcia">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nazvanie" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Kolichestvo" Type="int" Nullable="false" />
+    <Property Name="IdKachetvo" Type="int" Nullable="false" />
+    <Property Name="OtpysknayaCena" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="IdVidProdukcii" Type="int" Nullable="false" />
+    <Property Name="IdEdinici" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Proizvodstvo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdFermer" Type="int" Nullable="false" />
+    <Property Name="IdProdukcia" Type="int" Nullable="false" />
+    <Property Name="DataPoseshenia" Type="datetime" Nullable="false" />
+    <Property Name="Commentarii" Type="nvarchar" MaxLength="1000" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nazvanie" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="VidProdukcii">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nazvanie" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ZayavkiFermer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdFermer" Type="int" Nullable="false" />
+    <Property Name="IdPotrebnost" Type="int" Nullable="false" />
+    <Property Name="DataZayavki" Type="datetime" Nullable="false" />
+    <Property Name="IdStatus" Type="int" Nullable="false" />
+    <Property Name="Opisanie" Type="nvarchar" MaxLength="1000" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Produkcia_EdinicaIzmerenia">
+    <End Role="EdinicaIzmerenia" Type="Self.EdinicaIzmerenia" Multiplicity="1" />
+    <End Role="Produkcia" Type="Self.Produkcia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EdinicaIzmerenia">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Produkcia">
+        <PropertyRef Name="IdEdinici" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Produkcia_Kachestvo">
+    <End Role="Kachestvo" Type="Self.Kachestvo" Multiplicity="1" />
+    <End Role="Produkcia" Type="Self.Produkcia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kachestvo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Produkcia">
+        <PropertyRef Name="IdKachetvo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Produkcia_VidProdukcii">
+    <End Role="VidProdukcii" Type="Self.VidProdukcii" Multiplicity="1" />
+    <End Role="Produkcia" Type="Self.Produkcia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VidProdukcii">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Produkcia">
+        <PropertyRef Name="IdVidProdukcii" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Proizvodstvo_Fermer">
+    <End Role="Fermer" Type="Self.Fermer" Multiplicity="1" />
+    <End Role="Proizvodstvo" Type="Self.Proizvodstvo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fermer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Proizvodstvo">
+        <PropertyRef Name="IdFermer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Proizvodstvo_Produkcia">
+    <End Role="Produkcia" Type="Self.Produkcia" Multiplicity="1" />
+    <End Role="Proizvodstvo" Type="Self.Proizvodstvo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Produkcia">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Proizvodstvo">
+        <PropertyRef Name="IdProdukcia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ZayavkiFermer_Fermer">
+    <End Role="Fermer" Type="Self.Fermer" Multiplicity="1" />
+    <End Role="ZayavkiFermer" Type="Self.ZayavkiFermer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fermer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ZayavkiFermer">
+        <PropertyRef Name="IdFermer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ZayavkiFermer_Potrebnost">
+    <End Role="Potrebnost" Type="Self.Potrebnost" Multiplicity="1" />
+    <End Role="ZayavkiFermer" Type="Self.ZayavkiFermer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Potrebnost">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ZayavkiFermer">
+        <PropertyRef Name="IdPotrebnost" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ZayavkiFermer_Status">
+    <End Role="Status" Type="Self.Status" Multiplicity="1" />
+    <End Role="ZayavkiFermer" Type="Self.ZayavkiFermer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ZayavkiFermer">
+        <PropertyRef Name="IdStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище wsr_user_17ModelContainer">
+    <EntitySet Name="EdinicaIzmerenia" EntityType="Self.EdinicaIzmerenia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Fermer" EntityType="Self.Fermer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kachestvo" EntityType="Self.Kachestvo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Potrebnost" EntityType="Self.Potrebnost" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Produkcia" EntityType="Self.Produkcia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Proizvodstvo" EntityType="Self.Proizvodstvo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VidProdukcii" EntityType="Self.VidProdukcii" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ZayavkiFermer" EntityType="Self.ZayavkiFermer" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Produkcia_EdinicaIzmerenia" Association="Self.FK_Produkcia_EdinicaIzmerenia">
+      <End Role="EdinicaIzmerenia" EntitySet="EdinicaIzmerenia" />
+      <End Role="Produkcia" EntitySet="Produkcia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Produkcia_Kachestvo" Association="Self.FK_Produkcia_Kachestvo">
+      <End Role="Kachestvo" EntitySet="Kachestvo" />
+      <End Role="Produkcia" EntitySet="Produkcia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Produkcia_VidProdukcii" Association="Self.FK_Produkcia_VidProdukcii">
+      <End Role="VidProdukcii" EntitySet="VidProdukcii" />
+      <End Role="Produkcia" EntitySet="Produkcia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Proizvodstvo_Fermer" Association="Self.FK_Proizvodstvo_Fermer">
+      <End Role="Fermer" EntitySet="Fermer" />
+      <End Role="Proizvodstvo" EntitySet="Proizvodstvo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Proizvodstvo_Produkcia" Association="Self.FK_Proizvodstvo_Produkcia">
+      <End Role="Produkcia" EntitySet="Produkcia" />
+      <End Role="Proizvodstvo" EntitySet="Proizvodstvo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ZayavkiFermer_Fermer" Association="Self.FK_ZayavkiFermer_Fermer">
+      <End Role="Fermer" EntitySet="Fermer" />
+      <End Role="ZayavkiFermer" EntitySet="ZayavkiFermer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ZayavkiFermer_Potrebnost" Association="Self.FK_ZayavkiFermer_Potrebnost">
+      <End Role="Potrebnost" EntitySet="Potrebnost" />
+      <End Role="ZayavkiFermer" EntitySet="ZayavkiFermer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ZayavkiFermer_Status" Association="Self.FK_ZayavkiFermer_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="ZayavkiFermer" EntitySet="ZayavkiFermer" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

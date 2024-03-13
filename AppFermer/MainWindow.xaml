@@ -1,0 +1,151 @@
+﻿<Window x:Class="AppFermer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppFermer"
+        mc:Ignorable="d"
+        Title="Приложение для работы с Фермерами" Height="580" Width="1045">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="513*"/>
+            <ColumnDefinition Width="524*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="350"/>
+        </Grid.RowDefinitions>
+
+        <!--Разметка функционала Добавление фермера-->
+        <StackPanel Margin="5"
+                    Background="LightYellow">
+            <TextBlock 
+                Style="{StaticResource Zagolovok}"
+                Text="Добавление фермера"/>
+            <StackPanel
+                Orientation="Horizontal">
+                <TextBlock
+                    Style="{StaticResource FormatViewTextBlock}"
+                Text="Фамилия:"/>
+                <TextBox 
+                    Style="{StaticResource DefaultStyleTxb}"
+                    Name="TxbSurname"/>
+            </StackPanel>
+            <StackPanel
+                Orientation="Horizontal">
+                <TextBlock
+                     Style="{StaticResource FormatViewTextBlock}"
+                Text="Имя:"/>
+                <TextBox 
+                    Style="{StaticResource DefaultStyleTxb}"
+                    Name="TxbName"/>
+            </StackPanel>
+            <StackPanel
+                Orientation="Horizontal">
+                <TextBlock
+                     Style="{StaticResource FormatViewTextBlock}"
+                Text="Отчество:"/>
+                <TextBox 
+                    Style="{StaticResource DefaultStyleTxb}"
+                    Name="TxbLastname"/>
+            </StackPanel>
+            <StackPanel
+                Orientation="Horizontal">
+                <TextBlock
+                     Style="{StaticResource FormatViewTextBlock}"
+                Text="Адрес:"/>
+                <TextBox 
+                    Style="{StaticResource DefaultStyleTxb}"
+                    Name="TxbAddress"/>
+            </StackPanel>
+            <Button
+                Style="{StaticResource VeryCoolStyleBtn}"
+                Click="BtnCreate_Click"
+                Content="Создать фермера"
+                Name="BtnCreate"/>
+        </StackPanel>
+
+        <!--Разметка функционала Добавление продукции-->
+        <StackPanel
+            Background="LightYellow"
+            Margin="5"
+            Grid.Row="0"
+            Grid.Column="1">
+            <TextBlock
+                Style="{StaticResource Zagolovok}"
+                HorizontalAlignment="Center"
+                Text="Добавление продукции"/>
+            <StackPanel 
+                Orientation="Horizontal">
+                <TextBlock 
+                     Style="{StaticResource FormatViewTextBlock}"
+                    Text="Название: "/>
+                <TextBox 
+                    Style="{StaticResource DefaultStyleTxb}"
+                    Name="TxbNameProduct"/>
+            </StackPanel>
+            <StackPanel 
+                Orientation="Horizontal">
+                <TextBlock 
+                     Style="{StaticResource FormatViewTextBlock}"
+                    Text="Количество: "/>
+                <TextBox 
+                    Width="110"
+                    Height="25"
+                    Style="{StaticResource DefaultStyleTxb}"
+                    Name="TxbAmount"/>
+                <TextBlock 
+                    Margin="5,0,0,0"
+                    VerticalAlignment="Center"
+                    Width="70"
+                     Style="{StaticResource FormatViewTextBlock}"
+                    Text="Единицы: "/>
+                <ComboBox 
+                    Width="100"
+                    Style="{StaticResource DefaultStyleCmb}"
+                    Name="CmbEdinici"/>
+            </StackPanel>
+            <StackPanel 
+                Orientation="Horizontal">
+                <TextBlock 
+                    VerticalAlignment="Center"
+                     Style="{StaticResource FormatViewTextBlock}"
+                    Text="Качество: "/>
+                <ComboBox 
+                    Width="100"
+                    Style="{StaticResource DefaultStyleCmb}"
+                    Name="CmbQuality"/>
+                <TextBlock 
+                    VerticalAlignment="Center"
+                    Width="75"
+                     Style="{StaticResource FormatViewTextBlock}"
+                    Text="Вид: "/>
+                <ComboBox 
+                    Width="100"
+                    Style="{StaticResource DefaultStyleCmb}"
+                    Name="CmbVidProdukcii"/>
+            </StackPanel>
+            <StackPanel 
+                Orientation="Horizontal">
+                <TextBlock 
+                     Style="{StaticResource FormatViewTextBlock}"
+                    Text="Отпускная цена: "/>
+                <TextBox 
+                    Style="{StaticResource DefaultStyleTxb}"
+                    Name="TxbCost"/>
+            </StackPanel>
+            <Button 
+                Margin="5"
+                Style="{StaticResource VeryCoolStyleBtn}"
+                Click="BtnAddProduct_Click"
+                Content="Добавить продукт"
+                Name="BtnAddProduct"/>
+        </StackPanel>
+
+        <Frame 
+            Grid.Row="1"
+            Grid.ColumnSpan="2"
+            Name="FrmMain"/>
+
+    </Grid>
+</Window>

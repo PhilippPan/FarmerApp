@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d70ea73132304b33b102ad2d8f3da253" Name="Diagram1" ZoomLevel="101">
+        <EntityTypeShape EntityType="wsr_user_17Model.EdinicaIzmerenia" Width="1.5" PointX="0.75" PointY="1.75" />
+        <EntityTypeShape EntityType="wsr_user_17Model.Fermer" Width="1.5" PointX="3" PointY="5.375" />
+        <EntityTypeShape EntityType="wsr_user_17Model.Kachestvo" Width="1.5" PointX="0.75" PointY="7.25" />
+        <EntityTypeShape EntityType="wsr_user_17Model.Potrebnost" Width="1.5" PointX="3" PointY="8.5" />
+        <EntityTypeShape EntityType="wsr_user_17Model.Produkcia" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="wsr_user_17Model.Proizvodstvo" Width="1.5" PointX="5.25" PointY="1.375" />
+        <EntityTypeShape EntityType="wsr_user_17Model.Status" Width="1.5" PointX="3" PointY="11" />
+        <EntityTypeShape EntityType="wsr_user_17Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="wsr_user_17Model.VidProdukcii" Width="1.5" PointX="0.75" PointY="4.875" />
+        <EntityTypeShape EntityType="wsr_user_17Model.ZayavkiFermer" Width="1.5" PointX="5.25" PointY="5.125" />
+        <AssociationConnector Association="wsr_user_17Model.FK_Produkcia_EdinicaIzmerenia" />
+        <AssociationConnector Association="wsr_user_17Model.FK_Proizvodstvo_Fermer" />
+        <AssociationConnector Association="wsr_user_17Model.FK_ZayavkiFermer_Fermer" />
+        <AssociationConnector Association="wsr_user_17Model.FK_Produkcia_Kachestvo" />
+        <AssociationConnector Association="wsr_user_17Model.FK_ZayavkiFermer_Potrebnost" />
+        <AssociationConnector Association="wsr_user_17Model.FK_Produkcia_VidProdukcii" />
+        <AssociationConnector Association="wsr_user_17Model.FK_Proizvodstvo_Produkcia" />
+        <AssociationConnector Association="wsr_user_17Model.FK_ZayavkiFermer_Status" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

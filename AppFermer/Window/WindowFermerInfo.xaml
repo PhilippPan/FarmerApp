@@ -1,0 +1,35 @@
+﻿<Window x:Class="AppFermer.Window.WindowFermerInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppFermer.Window"
+        mc:Ignorable="d"
+        Title="Информация о фермерах" Height="450" Width="800">
+    <Grid>
+        <DataGrid
+            Name="GridFermerList"
+            AutoGenerateColumns="False"
+            CanUserAddRows="False"
+            >
+            <DataGrid.Columns>
+                <DataGridTextColumn 
+                    Header="Имя"
+                    Width="*"
+                    Binding="{Binding Imya}"/>
+                <DataGridTextColumn 
+                    Width="*"
+                    Header="Фамилия"
+                    Binding="{Binding Familia}"/>
+                <DataGridTextColumn 
+                    Width="*"
+                    Header="Отчество"
+                    Binding="{Binding Otchestvo}"/>
+                <DataGridTextColumn 
+                    Width="*"
+                    Header="Адрес"
+                    Binding="{Binding Adres}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
